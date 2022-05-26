@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+   --blue: #287bff;
+   --white: #fff;
+   --grey: #f5f5f5;
+   --green1: #0e5e3f;
+   --black1: #000;
+   --black2: #999;
+   --green: #148f06;
+   --success: #0df519;
+   --footer: #008000;
+   --background: #deeec1;
+}
+
+
+html, body {
+	height: : 100%
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+header {
+     display: block;
+     position: fixed;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     padding: 10px;
+     width: 100%;
+     background: var(--green1);
+}
+
+nav a:visited,
+nav a:link {
+     color: var(--white);
+     text-decoration: none;
+}
+
+nav > ul {
+     display: inline;
+     padding: 0;
+}
+
+nav > ul > li {
+     display: inline-block;
+     list-style: none;
+     margin: 0 5px 0 5px;
+     text-decoration: none;
+}
+
+
+/* Dropdown ends */
+
+main {
+     display: block;
+     padding-top: 1em;
+     padding-bottom: 3em;
+     min-height: 70%;
+}
+
+article {
+     padding: 0.5em;
+     width: 100%;
+}
+
+
+h1 {
+	
+}
+
+/* Carousel Styles*/
+
+.carousel-caption {
+     bottom: 3rem;
+     z-index: 10;
+}
+
+.carousel-caption h1 {
+     position: relative;
+     z-index: 0;
+     font-weight: bold;
+     text-shadow: 1px 3px 1px var(--black1);
+     color: var(--white);
+     text-align: center;
+}
+
+.carousel-caption p {
+     color: var(--white);
+     margin: 0.5em 0 0.5em 0;
+     text-shadow: 1px 3px 1px var(--black1);
+}
+
+.carousel-item {
+     height: 32rem;
+     max-width: 100vw;
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+}
+
+#welcomeCarousel {
+     z-index: 0;
+     margin-top: 2em;
+}
+
+.welcome-carousel-image1 {
+     box-shadow: inset 0 0 100vw rgba(0, 0, 0, 0.3);
+     background-image: url('../img/central1.jpg');
+}
+
+.welcome-carousel-image2 {
+     box-shadow: inset 0 0 100vw rgba(0, 0, 0, 0.3);
+     background-image: url('../img/central2.jpg');
+}
+
+.welcome-carousel-image3 {
+     box-shadow: inset 0 0 100vw rgba(0, 0, 0, 0.3);
+     background-image: url('../img/bonnymosque1.jpg');
+}
+
+/* Carousel Style End */
+
+.img-container {
+	position: relative;
+	text-align: center;
+	font-weight: 5em;
+    text-shadow: 1px 3px 1px var(--black1);
+    color: var(--white);
+}
+
+.text-centre {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text-centre h3 {
+	color: var(--white);
+}
+
+.page-title {
+	margin-top: 2em;
+	text-align: center;
+	color: var(--green1);
+}
+
+.main-img-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.main-img-container img {
+	width: 300px;
+	margin: 10px;
+	border: 1px solid var(--black1);
+	box-shadow: 0px 8px 16px 0px var(--black2);
+}
+
+.min-container {
+     width: 100%;
+     margin-left: 0;
+     margin-top: 0;
+}
+
+.foo-container {
+     margin: 2em;
+}
+
+.foo-container input, button, textarea {
+	margin-top: 5px;
+}
+
+.msg {
+     background-color: #f82a0f;
+     font-size: 1.2em;
+     color: #fff;
+     width: 100%;
+     margin-bottom: 5px;
+     text-align: center;
+     border-radius: 5px;
+}
+
+.success {
+     background-color: #10dd76;
+     font-size: 1.2em;
+     color: #fff;
+     width: 100%;
+     margin-bottom: 5px;
+     text-align: center;
+     border-radius: 5px;
+}
+
+footer {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin-right: auto;
+     margin-left: auto;
+     background-color: #d7eec6;
+     text-align: center;
+     color: var(--footer);
+}
+
+@media screen and (min-width: 678px) {
+     #welcomeCarousel {
+          z-index: 0;
+          margin-top: 2em;
+     }
+
+     .carousel-caption h1 {
+          width: 100%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          color: var(--white);
+          text-align: center;
+     }
+
+     .main-img-container {
+     	margin: 5em 2em;
+     }
+
+     .min-container {
+          width: 35%;
+          margin-left: 32%;
+          margin-top: 0;
+     }
+}
