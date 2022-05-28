@@ -1,5 +1,5 @@
 
-  const firebaseConfig = {
+  /*const firebaseConfig = {
      apiKey: "AIzaSyBd5ATAul4UIOgAsmXHIQGVAe3XqK6Xcps",
      authDomain: "centralzonewebapp.firebaseapp.com",
      projectId: "centralzonewebapp",
@@ -47,6 +47,20 @@
      document.getElementById('nice').innerHTML = nice;
   }
 
-  showMessage('nice');
+  showMessage('nice');*/
+
+  const removeMenu = document.querySelector('#icon');
+        const addNav = document.querySelector('#flex-nav');
+        const nav = document.querySelector('#nav');
+
+        const menu = document.getElementById('icon');
+        menu.addEventListener('click', function() {
+          
+          const removeMenu = document.getElementById('icon').remove();
+          const addNav = document.getElementById('flex-nav');
+
+          addNav.classList.remove('d-none');
+          
+        });
 
  

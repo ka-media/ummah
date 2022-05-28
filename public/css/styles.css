@@ -16,7 +16,6 @@
    --background: #deeec1;
 }
 
-
 html, body {
 	height: : 100%
 }
@@ -25,6 +24,17 @@ body {
 	font-family: sans-serif;
 }
 
+.main-icon {
+	display: block;
+	}
+
+.icon {
+	display: block;
+	width: 40px;
+	height: 4px;
+	margin: 3px;
+	background-color: var(--white);
+	}
 
 header {
      display: block;
@@ -35,6 +45,10 @@ header {
      padding: 10px;
      width: 100%;
      background: var(--green1);
+}
+
+nav {
+	display: none;
 }
 
 nav a:visited,
@@ -55,8 +69,32 @@ nav > ul > li {
      text-decoration: none;
 }
 
+/* Adding new nav */
+#flex-nav {
+    padding-top: 0.5em;
+    margin-left: 0;
+    font-weight: bold;
+}
 
-/* Dropdown ends */
+#flex-nav a:visited,
+#flex-nav a:link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#flex-nav ul li {
+    display: flex;
+    list-style: none;
+    margin-left:  0px;
+}
+
+#flex-nav ul li:hover {
+    padding: 20px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+/* Main element styles */
 
 main {
      display: block;
@@ -68,11 +106,6 @@ main {
 article {
      padding: 0.5em;
      width: 100%;
-}
-
-
-h1 {
-	
 }
 
 /* Carousel Styles*/
@@ -125,7 +158,7 @@ h1 {
      background-image: url('../img/bonnymosque1.jpg');
 }
 
-/* Carousel Style End */
+/* Image container styles */
 
 .img-container {
 	position: relative;
@@ -161,7 +194,7 @@ h1 {
 }
 
 .main-img-container img {
-	width: 300px;
+	width: 400px;
 	margin: 10px;
 	border: 1px solid var(--black1);
 	box-shadow: 0px 8px 16px 0px var(--black2);
@@ -213,22 +246,42 @@ footer {
 }
 
 @media screen and (min-width: 678px) {
+
+	nav {
+		display: block;
+	}
+
+    #flex-nav {
+        display: none;
+    }
+
+	.main-icon {
+		display: none;
+	}
+
      #welcomeCarousel {
-          z-index: 0;
-          margin-top: 2em;
-     }
+      z-index: 0;
+      margin-top: 2em;
+    }
 
      .carousel-caption h1 {
-          width: 100%;
-          margin-top: 1em;
-          margin-bottom: 1em;
-          color: var(--white);
-          text-align: center;
-     }
+      width: 100%;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      color: var(--white);
+      text-align: center;
+    }
 
      .main-img-container {
-     	margin: 8em 2em;
+     	margin: 2em 2em;
      }
+
+     .main-img-container img {
+		width: 400px;
+		margin: 10px;
+		border: 1px solid var(--black1);
+		box-shadow: 0px 8px 16px 0px var(--black2);
+	}
 
      .min-container {
           width: 35%;
